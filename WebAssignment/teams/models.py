@@ -17,3 +17,4 @@ class Players(models.Model):
     FootballClubs = models.ForeignKey(FootballClubs, on_delete=models.CASCADE)
     player_position = models.CharField(max_length=20)
     player_name = models.CharField(max_length=250)
+    player_id = models.CharField(max_length=250)

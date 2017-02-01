@@ -1,7 +1,12 @@
 from django.http import HttpResponse
+from django.template import loader
+from .models import FootballClubs
 
 def index(request):
-    return HttpResponse("<h1> This is the team homepage </h1>")
+    all_clubname = FootballClubs.objects.all()
+    template = loader.get_template('')
 
-def detail(request, team_ID ):
-    return HttpResponse("<h2>Details for team IDS" + str(team_ID) + "</h2>")
+    return HttpResponse('')
+
+def detail(request, teamID ):
+    return HttpResponse("<h2>Details for team IDS" + str(teamID) + "</h2>")
