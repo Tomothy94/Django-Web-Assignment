@@ -7,6 +7,6 @@ urlpatterns = [
 
 
     # /teams/1/
-    url(r'^(?P<team_ID>[0-9]+)/$', views.detail, name='detail'),
+    url(r'^(?P<teamID>[0-9]+)/$', views.detail, name='detail'),
 ]
 

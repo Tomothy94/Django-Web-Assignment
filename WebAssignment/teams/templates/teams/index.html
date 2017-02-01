@@ -1,4 +1,5 @@
 <ul>
-    <li><a href="#">team name here </a></li>
-    
+    {% for clubname in all_clubname %}
+    <li><a href="/teams/{{ clubname.id }}/">{{clubname.clubname }}</a></li>
+    {% endfor %}
 </ul>
