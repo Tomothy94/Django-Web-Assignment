@@ -10,7 +10,8 @@ class FootballClubs(models.Model):
 
 
     def __str__(self):
-        return self.clubname + ' - ' + self.teamID
+        return self.clubname + ' - ' + str(self.id)
+    # str casts .id function to string as it is inbuilt as an int
 
 class Players(models.Model):
     footballClubs = models.ForeignKey(FootballClubs, on_delete=models.CASCADE)

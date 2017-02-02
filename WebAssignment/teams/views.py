@@ -7,9 +7,9 @@ def index(request):
 
     return render(request, 'teams/index.html', {'all_clubname' : all_clubname})
 
-def detail(request, teamID ):
+def detail(request, id ):
     try:
-        teamID = FootballClubs.objects.get(pk=teamID)
+        team = FootballClubs.objects.get(pk=id)
     except FootballClubs.DoesNotExist:
         raise Http404("Team does not exist")
-    return render(request, 'teams/detail.html', {'teamID': teamID})
+    return render(request, 'teams/detail.html', {'team': team})
