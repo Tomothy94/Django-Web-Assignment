@@ -1,10 +1,10 @@
  {% if all_clubname %}
-
+    <h3> Here are all the teams </h3>
     <ul>
         {% for clubname in all_clubname %}
         <li><a href="/teams/{{ clubname.id }}/">{{clubname.clubname }}</a></li>
         {% endfor %}
     </ul>
  {% else%}
-    <h3>You dont have any teams listed</h3>
+    <h3>You dont have any players listed</h3>
  {% endif %}

@@ -1,0 +1,10 @@
+
+
+
+<h3>{{ footballClubs.player_name }}</h3>
+
+<ul>
+    {% for players in footballClubs.players_set.all %}
+    <li>{{ players.player_name }} - {{players.player_position }} </li>
+    {% endfor %}
+</ul>
