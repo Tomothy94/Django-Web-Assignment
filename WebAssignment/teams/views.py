@@ -24,12 +24,14 @@ def player_create(request, id):
         form = PlayerForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            data = form.cleaned_data
-            team = FootballClubs.objects.get(pk=id)
+            data = form.cleaned_data # The form gets the form results with the HTML; cleaned_data extracts the values
+            team = FootballClubs.objects.get(pk=id) #retrieve the team based on our id
+
+            # insert a new player into the team
             team.players_set.create(player_name=data['player_name'], player_position=data['player_position'])
             team.save()
+
             return HttpResponseRedirect('/teams/' + str(id))
-            # if a GET (or any other method) we'll create a blank form
     else:
         form = PlayerForm()
 
