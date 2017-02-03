@@ -8,3 +8,8 @@
     <li>{{ players.player_name }} - {{players.player_position }} </li>
     {% endfor %}
 </ul>
+{% if error_message %}
+    <p><strong>{{error_message}}</strong></p>
+{% endif %}
+
+<a href="/teams/{{team.id}}/player_create">Add new player</a>

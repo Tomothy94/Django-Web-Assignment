@@ -1,0 +1,7 @@
+<h3>Add a new player</h3>
+
+<form action="player_create" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>

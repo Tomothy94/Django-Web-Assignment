@@ -1,3 +1,4 @@
+#DAL
 from django.db import models
 
 
@@ -18,6 +19,16 @@ class Players(models.Model):
     player_position = models.CharField(max_length=20)
     player_name = models.CharField(max_length=250)
 
+    # def create(self):
+    #     models.create(self)
+    #     models.save()
+
+    # def get(self, id):
+    #     return self.get(id);
+    #
+    # def delete(self, id):
+    #     self.delete(id)
+    #     self.save()
 
     def __str__(self):
         return self.player_name
