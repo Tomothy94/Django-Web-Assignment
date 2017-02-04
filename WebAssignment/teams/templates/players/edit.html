@@ -1,0 +1,21 @@
+<h3>Edit a player</h3>
+<h2> Hello</h2>
+<form action="player_edit" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+
+{% if all_clubname %}
+    <h3> Here are all the teams </h3>
+    <ul>
+    {% for players in team.players_set.all %}
+    <li>{{ players.player_name }} - {{players.player_position }} </li>
+    {% endfor %}
+    </ul>
+ {% else%}
+    <h3>You dont have any players listed</h3>
+ {% endif %}
+
+</form>
+
+

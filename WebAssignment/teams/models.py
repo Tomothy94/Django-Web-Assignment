@@ -1,6 +1,7 @@
 #DAL
 from django.db import models
 
+#Connection to Database,
 
 #Team ID and Team Name
 # Create your models here.
