@@ -1,11 +1,10 @@
 
 
-
-<!--<h3>{{ footballClubs.player_name }}</h3>-->
 <h3>{{team.clubname}}</h3>
 <ul>
-    {% for players in team.players_set.all %}
-    <li>{{ players.player_name }} - {{players.player_position }} </li>
+    {% for player in team.players_set.all %}
+	<li>{{ player.player_name }} - {{player.player_position }} </li>
+   	<a href="/teams/{{team.id}}/player_edit/{{player.id}}">Edit</a>
     {% endfor %}
 </ul>
 {% if error_message %}
@@ -13,4 +12,3 @@
 {% endif %}
 
 <a href="/teams/{{team.id}}/player_create">Add new player</a>
-<a href="/teams/{{team.id}}/player_edit">Edit an existing player</a>
