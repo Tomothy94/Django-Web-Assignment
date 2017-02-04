@@ -58,3 +58,17 @@ def player_edit(request, id, playerid):
         form = PlayerForm(initial={'player_name':player.player_name, 'player_position': player.player_position})
 
     return render(request, 'players/edit.html', {'form': form, 'player': player})
+
+def player_delete(request, id, playerid):
+    # if this is a POST request we need to process the form data
+    team = FootballClubs.objects.get(pk=id) #retrieve the team based on our id
+    player = team.players_set.get(pk=playerid)
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        player.delete()
+        return HttpResponseRedirect('/teams/' + str(id))
+    else:
+        form = PlayerForm(initial={'player_name':player.player_name, 'player_position': player.player_position})
+
+    return render(request, 'players/delete.html', {'form': form, 'player': player})
+

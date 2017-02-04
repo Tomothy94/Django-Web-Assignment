@@ -1,0 +1,10 @@
+You are about to delete:
+{{ player }}
+Are you sure you wish to do this?
+<form action="{{player.id}}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Yes" />
+
+</form>
+
+<button onclick="javascript:history.go(-1)">No</button>
