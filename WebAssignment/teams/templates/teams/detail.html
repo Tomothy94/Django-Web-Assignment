@@ -1,16 +1,21 @@
+<body style="background-color:white;">
+<body align="center">
+<img src="http://i61.photobucket.com/albums/h41/tommieds/header_zpsw29j1xsz.png" alt="some_text" style="width:800px;height:125px;">
+<img src="http://i61.photobucket.com/albums/h41/tommieds/fillspace_zpsd2ovqr1y.png" alt="some_text" style="float:right;width:500px;height:1200px;">
+<img src="http://i61.photobucket.com/albums/h41/tommieds/fillspace_zpsd2ovqr1y.png" alt="some_text" style="float:left;width:500px;height:1200px;">
 
+<h3 style="font-family:Calibri;color:black; font-size:350%;" > {{team.clubname}}</h3>
 
-<h3>{{team.clubname}}</h3>
-<ul>
     {% for player in team.players_set.all %}
-	<li>{{ player.player_name }} - {{player.player_position }} </li>
-   	<a href="/teams/{{team.id}}/player_edit/{{player.id}}">Edit</a>
-    <a href="/teams/{{team.id}}/player_delete/{{player.id}}">Delete </a>
+    <h3 style="font-family:Calibri;color:black; font-size:150%;" >	<li>{{ player.player_name }} - {{player.player_position }} </li> </h3>
+    <h3 style="font-family:Calibri;color:black; font-size:150%;" ><a href="/teams/{{team.id}}/player_edit/{{player.id}}">Edit</a> </h3>
+    <h3 style="font-family:Calibri;color:black; font-size:150%;" ><a href="/teams/{{team.id}}/player_delete/{{player.id}}">Delete </a> </h3>
     {% endfor %}
 </ul>
 {% if error_message %}
     <p><strong>{{error_message}}</strong></p>
 {% endif %}
 
-<a href="/teams/{{team.id}}/player_create">Add new player</a>
+<h3 style="font-family:Calibri;color:black; font-size:150%;" ><a href="/teams/{{team.id}}/player_create">Add new player</a> </h3>
 <button onclick="javascript:history.go(-1)">Back</button>
+</body>

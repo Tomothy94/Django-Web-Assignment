@@ -1,10 +1,19 @@
- {% if all_clubname %}
-    <h3> Here are all the teams </h3>
-    <ul>
+<body style="background-color:white;">
+<body align="center">
+<img src="http://i61.photobucket.com/albums/h41/tommieds/header_zpsw29j1xsz.png" alt="some_text" style="width:800px;height:125px;">
+<img src="http://i61.photobucket.com/albums/h41/tommieds/fillspace_zpsd2ovqr1y.png" alt="some_text" style="float:right;width:500px;height:1200px;">
+<img src="http://i61.photobucket.com/albums/h41/tommieds/fillspace_zpsd2ovqr1y.png" alt="some_text" style="float:left;width:500px;height:1200px;">
+
+
+{% if all_clubname %}
+    <h3 style="font-family:Calibri;color:black; font-size:350%;" > Here are all the teams in the league: </h3>
         {% for club in all_clubname %}
-        <li><a href="{% url 'teams:detail' club.id %}">{{club.clubname}}</a></li>
+<h2 style="font-family:Calibri;font-size:200%;" >  <li><a href="{% url 'teams:detail' club.id %}">{{club.clubname}}</a></li> </h2>
         {% endfor %}
     </ul>
  {% else%}
     <h3>You dont have any players listed</h3>
  {% endif %}
+
+<img src="http://vignette4.wikia.nocookie.net/peel/images/0/01/Football.jpg/revision/latest?cb=20150130151652" alt="some_text" style="width:600px;height:300px;">
+</body>
