@@ -10,9 +10,7 @@
 <h2 style="font-family:Calibri;font-size:150%;" > <p>   Are you sure you wish to do this? </p> </h2>
 <form action="{{player.id}}" method="post">
     {% csrf_token %}
-    <input type="submit" value="Yes - Delete Player" />
+    <input type="submit" value="Yes" />
 
 </form>
-
-<button onclick="javascript:history.go(-1)">No - Go Back</button>
-
+<p><button onclick="javascript:history.go(-1)">Back</button> </p>
