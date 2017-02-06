@@ -4,14 +4,15 @@
 <img src="http://i61.photobucket.com/albums/h41/tommieds/fillspace_zpsd2ovqr1y.png" alt="some_text" style="float:right;width:500px;height:1200px;">
 <img src="http://i61.photobucket.com/albums/h41/tommieds/fillspace_zpsd2ovqr1y.png" alt="some_text" style="float:left;width:500px;height:1200px;">
 
-<h3>Add a new player</h3>
+<h3 style="font-family:Calibri;font-size:200%;" >Add a new player</h3>
 
 
 
 
 <form action="player_create" method="post">
     {% csrf_token %}
-    {{ form }}
+    <h2 style="font-family:Calibri;font-size:150%;" >{{ form }}</h2>
     <input type="submit" value="Submit" />
 </form>
 
+<button onclick="javascript:history.go(-1)">Back</button>
