@@ -18,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teams/templates/teams/detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -69,8 +69,8 @@
       <file leaf-file-name="create.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teams/templates/players/create.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+            <state relative-caret-position="221">
+              <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#body#0;n#body#0;n#!!top" expanded="true" />
@@ -83,16 +83,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="delete.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/teams/templates/players/delete.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+              <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#body#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#body#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#2;n#body#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#body#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#body#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#2;n#body#0;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,11 +190,11 @@
         <option value="$PROJECT_DIR$/teams/forms.py" />
         <option value="$PROJECT_DIR$/teams/controllers.py" />
         <option value="$PROJECT_DIR$/WebAssignment/settings.py" />
-        <option value="$PROJECT_DIR$/teams/templates/players/delete.html" />
         <option value="$PROJECT_DIR$/teams/templates/players/edit.html" />
         <option value="$PROJECT_DIR$/teams/templates/teams/index.html" />
         <option value="$PROJECT_DIR$/teams/templates/teams/detail.html" />
         <option value="$PROJECT_DIR$/teams/templates/players/create.html" />
+        <option value="$PROJECT_DIR$/teams/templates/players/delete.html" />
       </list>
     </option>
   </component>
@@ -501,7 +504,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.111979164" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -863,34 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teams/templates/players/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#body#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#body#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#body#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#form#0;n#body#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teams/templates/players/delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#body#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#body#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/teams/templates/players/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -934,6 +909,37 @@
             <element signature="n#style#0;n#h3#2;n#body#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#3;n#body#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#4;n#body#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teams/templates/players/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#body#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#body#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#body#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#body#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#form#0;n#body#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teams/templates/players/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#body#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#body#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#body#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#body#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#body#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#2;n#body#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
